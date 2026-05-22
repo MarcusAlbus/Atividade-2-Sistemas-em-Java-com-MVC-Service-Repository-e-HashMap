@@ -1,21 +1,12 @@
-package model.service;
-import model.entity.Aluno;
-import model.repository.AlunoRepository;
+package service;
+import entity.Aluno;
 
-import java.util.HashMap;
-import java.util.Map;
+import entity.Aluno;
 
-public class AlunoService {
+public class LocacaoService {
 
-    AlunoRepository repository = new AlunoRepository();
-
-    public void validarMatricula(int id, String nome, int matricula) {
-        HashMap<Integer, Aluno> listaAluno = repository.getListaAluno();
-        for (Aluno alunoSalvo : listaAluno.values()){
-            if (alunoSalvo.getMatricula() == matricula){
-
-                throw new IllegalArgumentException("Erro! Essa matrícula já existe.");
-            }
-        }
+    public void validarMatricula(Aluno aluno){
+        if (aluno == null && aluno)
     }
+
 }
