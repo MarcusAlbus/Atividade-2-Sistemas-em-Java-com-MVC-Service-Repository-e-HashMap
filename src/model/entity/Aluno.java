@@ -4,9 +4,9 @@ public class Aluno {
 
     protected int id;
     protected String nome;
-    protected int matricula;
+    protected String matricula;
 
-    public Aluno(int id, String nome, int matricula){
+    public Aluno(int id, String nome, String matricula){
 
         this.id = id;
         this.nome = nome;
@@ -29,11 +29,11 @@ public class Aluno {
         return nome;
     }
 
-    public void setMatricula(int matricula){
+    public void setMatricula(String matricula){
         this.matricula = matricula;
     }
 
-    public int getMatricula(){
+    public String getMatricula(){
         return matricula;
     }
 }
